@@ -6,3 +6,7 @@ package-lock.json
 
 # Dependency directories
 node_modules
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/sendmail.iml
+/.idea/vcs.xml
