@@ -53,7 +53,7 @@ route.post('/text-mail', (req, res) => {
 
 route.post('/attachments-mail', (req, res) => {
     const {to_user, subject, content} = req.body;
-    let attachments = Object.keys(req.files).map((key) => {
+    let attachments = Object.keys(req.files||{}).map((key) => {
         let file = req.files[key]
         return {
             filename: file.name,
